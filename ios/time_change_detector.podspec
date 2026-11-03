@@ -9,7 +9,8 @@ Pod::Spec.new do |s|
   s.license          = { :file => '../LICENSE' }
   s.author           = { 'Skandar Munir Ahmed' => 'skandar_munir@yahoo.com' }
   s.source           = { :path => '.' }
-  s.source_files = 'Classes/**/*'
+  s.source_files = 'time_change_detector/Sources/time_change_detector/**/*.swift'
+  s.resource_bundles = {'time_change_detector_privacy' => ['time_change_detector/Sources/time_change_detector/PrivacyInfo.xcprivacy']}
   s.dependency 'Flutter'
   s.platform = :ios, '12.0'
 
